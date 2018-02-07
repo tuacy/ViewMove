@@ -20,6 +20,8 @@
         <activity android:name=".module.overscroller.OverScrollerMainActivity" />
 
         <activity android:name=".module.viewdraghelper.ViewDragHelperMainActivity" />
+        <activity android:name=".module.overscroller.OverScrollerDragActivity" />
+        <activity android:name=".module.overscroller.OverScrollerFunctionActivity" />
     </application>
 
 </manifest>

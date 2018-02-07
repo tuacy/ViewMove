@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/AppTheme.Toolbar"
+        android:id="@+id/tool_bar_main"
+        app:title="侧滑显示删除和关注按钮"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp" />
+
+    <com.tuacy.viewmove.module.overscroller.widget.ScrollerDragLayout
+        android:id="@+id/scroller_drag_0"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/text_content_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/drag_show_more"
+            android:textColor="@color/colorPrimaryText"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorRipple">
+
+            <ImageView
+                android:id="@+id/image_follow"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_follow"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorSegment">
+
+            <ImageView
+                android:id="@+id/image_delete"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+    </com.tuacy.viewmove.module.overscroller.widget.ScrollerDragLayout>
+
+    <com.tuacy.viewmove.module.overscroller.widget.ScrollerDragLayout
+        android:id="@+id/scroller_drag_1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/drag_show_more"
+            android:textColor="@color/colorPrimaryText"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorRipple">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_read"
+                android:textColor="@color/colorSecondaryText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/delete"
+                android:textColor="@color/colorSecondaryText" />
+        </RelativeLayout>
+
+    </com.tuacy.viewmove.module.overscroller.widget.ScrollerDragLayout>
+
+</LinearLayout>

@@ -11,21 +11,21 @@
     <android.support.v7.widget.Toolbar
         style="@style/AppTheme.Toolbar"
         android:id="@+id/tool_bar_main"
-        app:title="@string/over_scroller"
+        app:title="测试OverScroller函数"
         app:navigationIcon="@drawable/ic_arrow_back_white_24dp" />
 
-    <Button
-        android:id="@+id/button_scroller_drag"
+    <com.tuacy.viewmove.module.overscroller.widget.ScrollerFunctionLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OverScroller侧滑"
-        android:textAllCaps="false"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button_scroller_function"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OverScroller函数"
-        android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="测试"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_red_light" />
+
+    </com.tuacy.viewmove.module.overscroller.widget.ScrollerFunctionLayout>
 
 </LinearLayout>
