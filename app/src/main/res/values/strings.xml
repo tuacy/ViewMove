@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ViewMove</string>
+
+    <string name="view_move">View 移动</string>
+
+    <string name="over_scroller">OverScroller</string>
+    <string name="follow">关注</string>
+    <string name="delete">删除</string>
+    <string name="content">内容</string>
+    <string name="no_read">标记为未读</string>
+    <string name="drag_show_more">请往左边侧滑</string>
 </resources>
